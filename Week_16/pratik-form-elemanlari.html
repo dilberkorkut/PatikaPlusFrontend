@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elemanlari</title>
+</head>
+<body>
+
+    <form>
+
+        <h2>Kullanici Kayit Formu</h2>
+        <label for="fname">Ad:</label><br>
+        <input type="text" id="fname" name="fname" required><br>
+
+        <label for="lname">Soyad:</label><br>
+        <input type="text" id="lname" name="lname" required><br>
+
+        <label for="email">Email</label> <br>
+        <input type="email" name="email" id="email" required> <br>
+
+        <label for="password">Şifre:</label><br>
+        <input type="password" id="password" name="password" required><br><br>
+
+        <p>Cinsiyet:</p>
+        <input type="radio" id="erkek" name="cinsiyet" value="erkek">
+        <label for="erkek">Erkek</label><br>
+        <input type="radio" id="kadin" name="cinsiyet" value="kadin">
+        <label for="kadin">Kadın</label><br><br>
+
+        <p>Favori Meyveniz</p>
+        <select id="meyve" name = "meyve">
+            <option value="elma">Elma</option>
+            <option value="muz">Muz</option>
+            <option value="cilek">Cilek</option>
+        </select><br><br><br>
+
+        <label for="mesaj">Mesajiniz:</label><br>
+        <textarea name="mesaj" id="mesaj" cols="30" rows="10"></textarea><br>
+
+
+
+        <input type="submit" value="Gonder">
+        <input type="submit" value="Temizle">
+        <br><br>
+
+    </form>
+    <br>
+    
+</body>
+</html>
