@@ -10,7 +10,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     background-color: #f2f2f2;
     margin: 0;
-    background-image: url("/css-odev1/kitchen.jpeg");
+    background-image: url("/Week_17/css-odev1/kitchen.jpeg");
    
 }
 
@@ -60,7 +60,6 @@ main {
     color: white;
     text-shadow: 6px -3px 7px black;;
     text-align: center;
-    background-image: url("/01-html-kategorisi/deneme/kitchen.jpeg");
     background-size: cover;
 }
 
