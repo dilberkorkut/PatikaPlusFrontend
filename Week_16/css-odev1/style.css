@@ -1,0 +1,95 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    background-image: url("/css-odev1/kitchen.jpeg");
+   
+}
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+.domain {
+    font-weight: lighter;
+    margin-top: 10px;
+ 
+}
+
+nav ul {
+  
+    list-style-type: none;
+    padding: 5px 10px 5px 10px;
+    margin-top: 20px;
+    font-size: 17px;
+
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+  
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(70, 146, 142);
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: rgb(231, 139, 19);
+  }
+
+main {
+    margin: auto;
+    padding: 250px;
+    justify-content: center;
+    font-size: 26px;
+    color: white;
+    text-shadow: 6px -3px 7px black;;
+    text-align: center;
+    background-image: url("/01-html-kategorisi/deneme/kitchen.jpeg");
+    background-size: cover;
+}
+
+#hizmetler {
+    text-align: center;
+   
+    
+}
+
+
+footer {
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 5px 1px 5px 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 17px;
+
+}
+footer ul li {
+    display: inline;
+    margin-right: 20px;
+}
