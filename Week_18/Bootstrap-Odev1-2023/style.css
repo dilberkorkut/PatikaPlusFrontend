@@ -1,0 +1,38 @@
+body {
+    background: #E9ECEF;
+}
+
+.display-4 {
+    text-align: center;
+}
+
+
+
+p a {
+    color: #128496;
+}
+
+p a:hover {
+    color: darkorange;
+}
+
+.btn {
+    border: none;
+}
+
+p .btn {
+    background: #128496;
+}
+
+p .btn:hover {
+    background: darkorange;
+    border: none;
+}
+
+
+
+.container .h-urunlerimiz {
+  
+    text-align: center;
+    
+}
