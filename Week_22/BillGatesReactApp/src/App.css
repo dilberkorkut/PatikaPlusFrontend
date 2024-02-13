@@ -1,0 +1,151 @@
+.nav {
+  padding-left: 15px;
+  display: flex;
+  justify-content: start;
+  background-color: white;
+  margin-bottom: 12px;
+  height: 72px;
+  align-items: center;
+  margin-top: 0px;
+}
+
+.profile-container {
+  background-color: white;
+  margin-bottom: 12px;
+  padding: 15px;
+}
+
+.profile-container img {
+  width: 130x;
+  height: 130px;
+  border-radius: 50%;
+}
+
+.money-container {
+  color: #fff;
+  background-color: #2ecc71;
+  background: linear-gradient(180deg, #2ecc71, #1abc9c);
+  padding: 20px;
+  margin: 11px 0;
+  font-family: Roboto, sans-serif;
+  font-size: 32px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  position: sticky;
+  z-index: 1;
+}
+.money-container h2 {
+  color: white;
+  font-size: 30px;
+  padding: 5px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-gap: 10px 10px;
+}
+
+.product-card {
+  background-color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.card-container img {
+  display: block;
+  margin: 15px auto;
+  height: 120px;
+}
+
+.card-container h4 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-top: 15px;
+  letter-spacing: 0.3px;
+}
+
+.card-container p {
+  margin-top: 5px;
+  font-size: 20px;
+  color: #24c486;
+}
+
+.shop-buttons {
+  margin: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2%;
+  color: rgb(87, 82, 82);
+  border-radius: 3px;
+  width: 100%;
+}
+
+.shop-input {
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  border: none;
+  border: 1px solid #b2bec3;
+  padding: 9px 12px;
+}
+
+.shop-buttons button {
+  width: 35%;
+  padding: 10px 12px;
+  border-radius: 5px;
+  text-align: center;
+  color: black;
+  font-weight: bold;
+  border: none;
+}
+
+#sell-button {
+  background: #f1f2f6;
+  color: #333;
+}
+
+#buy-button {
+  background: linear-gradient(180deg, #2ecc71, #1abc9c);
+  color: white;
+}
+
+.shop-buttons input {
+  width: 30%;
+  padding: 10px 15px 10px 15px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.receipt-container {
+  display: block;
+  align-items: center;
+}
+.receipt-container h2 {
+  font-size: 28px;
+  padding: 15px;
+  font-weight: 700;
+  margin-left: 30px;
+}
+
+.receipt-container ul {
+  display: flex;
+  flex-direction: column;
+}
+
+.receipt-container li {
+  list-style-type: none;
+  padding: 5px;
+  margin-bottom: 10px;
+}
+
+.total {
+  font-size: 18px;
+  font-weight: 700;
+  margin: 10px;
+}
