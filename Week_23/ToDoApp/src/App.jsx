@@ -1,103 +1,83 @@
-import React, { useState } from "react";
-import Todo from "./Components/Todo";
-import "./App.css";
-
+import React from 'react'
 
 function App() {
-  const [text, setText] = useState("");
-  const [todoList, setTodoList] = useState([]);
-  const [filter, setFilter] = useState('all');
-
-  const handleChange = (e1) => {
-    setText(e1.target.value);
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const addTodo = {
-      id: Date.now(),
-      text: text,
-      completed: false
-    };
-    setTodoList([...todoList, addTodo])
-    setText(""); // Yeni bir todo eklerken öncekinin inputun valuesunda kalmasını engellemek için boşaltıldı.
-  };
-
-  const filteredTodoList = todoList.filter(todo => {
-    if (filter === 'all') {
-      return true;
-    } else if (filter === 'active') {
-      return !todo.completed;
-    } else if (filter === 'completed') {
-      return todo.completed;
-    }
-  });
-
-  function clearCompleted() {
-    let filteredTodo = todoList.filter((todo) => todo.completed !== true);
-    setTodoList(filteredTodo);
-  }
-
-
   return (
-    <>
-      <section className="todoapp">
-        <header className="header">
+    <div>
+      <section class="todoapp">
+        <header class="header">
           <h1>todos</h1>
-          <form className="inputForm" onSubmit={handleSubmit}>
+          <form>
             <input
-              className="new-todo"
+              class="new-todo"
               placeholder="What needs to be done?"
               autoFocus
-              value={text}
-              onChange={handleChange}
             />
           </form>
         </header>
 
-        <section className="main">
-          <input className="toggle-all" type="checkbox" />
-          <label htmlFor="toggle-all">Mark all as complete</label>
-          <ul className="todo-list">
-            {filteredTodoList.map(todo => (
-              <Todo
-                key={todo.id}
-                selectedTodo={todo}
-                setTodoList={setTodoList}
-                todoList={todoList}
-              />
-            ))}
+        <section class="main">
+          <input class="toggle-all" type="checkbox" />
+          <label for="toggle-all">Mark all as complete</label>
+
+          <ul class="todo-list">
+            <li class="completed">
+              <div class="view">
+                <input class="toggle" type="checkbox" />
+                <label>Learn JavaScript</label>
+                <button class="destroy"></button>
+              </div>
+            </li>
+            <li>
+              <div class="view">
+                <input class="toggle" type="checkbox" />
+                <label>Learn React</label>
+                <button class="destroy"></button>
+              </div>
+            </li>
+            <li>
+              <div class="view">
+                <input class="toggle" type="checkbox" />
+                <label>Have a life!</label>
+                <button class="destroy"></button>
+              </div>
+            </li>
           </ul>
         </section>
 
-        <footer className="footer">
-          <span className="todo-count">
-            <strong>{todoList.length} </strong>
+        <footer class="footer">
+          <span class="todo-count">
+            <strong>2</strong>
             items left
           </span>
 
-          <ul className="filters">
+          <ul class="filters">
             <li>
-              <a href="#/" onClick={() => setFilter('all')}>
+              <a href="#/" class="selected">
                 All
               </a>
             </li>
             <li>
-              <a href="#/" onClick={() => setFilter('active')}>
-                Active
-              </a>
+              <a href="#/">Active</a>
             </li>
             <li>
-              <a href="#/" onClick={() => setFilter('completed')}>
-                Completed
-              </a>
+              <a href="#/">Completed</a>
             </li>
           </ul>
 
-          <button className="clear-completed" onClick={clearCompleted}>Clear completed</button>
+          <button class="clear-completed">Clear completed</button>
         </footer>
       </section>
-    </>
+
+      <footer class="info">
+        <p>Click to edit a todo</p>
+        <p>
+          Created by <a href="https://d12n.me/">Dmitry Sharabin</a>
+        </p>
+        <p>
+          Part of <a href="http://todomvc.com">TodoMVC</a>
+        </p>
+      </footer>
+    </div>
   );
 }
 
